@@ -1,0 +1,81 @@
+/*ТУТ БУДЕТ ПЛАН
+1. header и futer для всех страниц
+2. главная страница
+3. обо мне
+4. мои услуги
+5. портфолио
+6. блог
+7. контакты и связаться
+
+фон белый, шрифты черный и #838383
+
+*/
+
+
+/*БЛОК header -- общий*/
+
+
+
+/*БЛОК futer -- общий */
+
+
+
+/*БЛОК main*/
+
+body {
+	margin: 0;
+	background-image: url(../img/mein-bg.jpg);
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header {
+	height: 75px;
+	width: 100%;
+}
+
+.conteiner {
+	height: 100%;
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.logo-link {
+	margin: 5px;
+	height: 50px;
+	width: 200px;
+	float: left;
+}
+
+.logo-link img {
+	height: 100%;
+}
+
+.menu {
+	float: right;
+}
+
+
+.menu li { 
+	display: inline;
+	height: 20px; 
+	margin-right: 25px;
+	margin-top: 26px;	
+	font-weight: 400;
+	font-size: 15px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.menu a:hover, a :focus {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.hello h2 {
+	
+}
+
