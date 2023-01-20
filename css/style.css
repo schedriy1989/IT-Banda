@@ -79,17 +79,20 @@
 .futer {
 	background: #000;
 	width: 100%;
-	height: 10%;
 	margin-top: 20px;
+	position: fixed;
+	top: calc(100% - 100px);
 }
 
-.futer h2 {
+.futer h3 {
 
 }
+
 .futer .follow {
 	margin-left: calc(50% - 125px);;
 	width: 250px;
 	padding-left: 0;
+	padding-top: 10px;
 }
 
 .copyright h5 {
@@ -99,13 +102,14 @@
 	color: #919191;
 	text-align: center;
 	margin: 0;
-	padding: 20px;
+	padding-bottom: 10px;
 }
 
 /*БЛОК main-------------------------------------------------*/
 
 body {
 	margin: 0;
+/*	position: absolute;*/
 }
 
 #main-body {
@@ -194,6 +198,9 @@ body {
 
 /*БЛОК about -------------------------------------------------*/
 
+/*.about {
+	height: calc(90% - 75px);
+}*/
 
 .about-mi {
 	width: 90%;
