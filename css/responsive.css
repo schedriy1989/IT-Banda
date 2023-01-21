@@ -1,0 +1,128 @@
+/*варианты ширины
+1. основной код до 1200
+2. от 1024 до 1200
+3. от 768 до 1024
+4. от 375 до 768*/
+
+
+/*ширина окна от 1024 до 1200-----------------------------------------*/
+
+@media screen and (max-width: 1200px) {
+.conteiner {   
+    width: 90%;
+
+}
+.about-mi h3 {
+	font-size: 18px;	
+	line-height: 20px;
+}
+.competens h3 {
+	font-size: 18px;	
+	line-height: 20px;
+}
+
+
+
+
+}
+
+/*ширина окна от 950 до 1024-----------------------------------------*/
+
+@media screen and (max-width: 1024px) {
+
+.about-mi h3 {
+	font-size: 16px;	
+	line-height: 18px;
+}
+.competens h3 {
+	font-size: 16px;	
+	line-height: 18px;
+}
+.about-mi h2 {
+	font-size: 25px;	
+	line-height: 35px;
+}
+.competens h2 {
+	font-size: 25px;	
+	line-height: 35px;
+}
+
+
+
+
+
+	
+}
+
+/*ширина окна от 768 до 950-----------------------------------------*/
+
+@media screen and (max-width: 950px) {
+
+.logo-link {
+    width: 150px;
+}
+/*page about ------------------------------------------------*/
+.about-mi {
+	margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.about-mi h2 {
+    font-size: 22px;
+    line-height: 30px;
+}
+.competens h2 {
+	font-size: 22px;	
+	line-height: 30px;
+}
+
+.about-mi h3 {
+	font-size: 15px;	
+	line-height: 15px;
+	margin-bottom: 10px;
+}
+.competens h3 {
+	font-size: 15px;	
+	line-height: 15px;
+	margin-bottom: 10px;
+}
+
+
+/*футер-----*/
+.futer {
+	top: calc(100% - 90px);
+}
+.follow {
+	padding-top: 0;
+	margin-top: 10px;
+}
+
+.follow ul {
+	margin: 5px;
+    padding: 0;
+    text-align: center;
+}
+
+.follow ul li img {	
+	height: 20px;	
+}
+
+.copyright h5 {  
+    font-size: 13px;
+    line-height: 22px;
+}
+
+
+}
+
+/*ширина окна от 375 до 768 -----------------------------------------*/
+
+@media screen and (max-width: 768px) {
+
+
+
+
+
+
+	
+}

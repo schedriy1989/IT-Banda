@@ -81,18 +81,27 @@
 	width: 100%;
 	margin-top: 20px;
 	position: fixed;
-	top: calc(100% - 100px);
+	top: calc(100% - 125px);
 }
 
-.futer h3 {
-
-}
-
-.futer .follow {
-	margin-left: calc(50% - 125px);;
+.follow {
+	margin-left: calc(50% - 125px);
 	width: 250px;
 	padding-left: 0;
 	padding-top: 10px;
+}
+.follow ul li {
+	display: inline-block;
+}
+.follow ul li img {
+	filter: invert(100%);
+	height: 25px;
+	margin: 0;
+}
+
+.follow a {
+	vertical-align: middle;
+	margin: 5px;
 }
 
 .copyright h5 {
@@ -176,12 +185,12 @@ body {
 }
 
 
-.follow {
-	padding-left: 50px;
-	
+.main .follow {
+/*	padding-left: 50px;*/
+	margin-left: 50px;
 }
 
-.follow h3 {
+/*.follow h3 {
 	float: left;
 	font-weight: 400;
 	font-size: 18px;
@@ -195,12 +204,8 @@ body {
 	vertical-align: middle;
 	margin: 5px;
 }
-
+*/
 /*БЛОК about -------------------------------------------------*/
-
-/*.about {
-	height: calc(90% - 75px);
-}*/
 
 .about-mi {
 	width: 90%;
