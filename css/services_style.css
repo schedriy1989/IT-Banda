@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    background: #F5F8FD;
+}
+
+.services {
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    margin: 5px;
+}
+
+ul {
+    padding: 0;
+}
+
+.container {
+    width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.container h2 {
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 14px;
+    border-bottom: solid 2px #FEBD01;
+    font-weight: 700;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+}
+
+.container p {
+    margin: 0;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+}
+
+.services-block {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    grid-gap: 16px;
+    margin-bottom: 30px;
+}
+
+.services-item {
+    padding: 30px;
+    background: #fff;
+    border: 1px solid #eee;
+    filter: drop-shadow(2px 2px 4px #838383);
+}
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #FEBD01;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.service-icon img {
+    width: 34px;
+}
+
+.services-item h3 {
+    margin: 0;
+    margin-top: 16px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.services-item p {
+    margin: 0;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #838383;
+}
+
+.services-item:hover {
+    background-color: #FEBD01;
+    border: none;
+}
+
+.services-item:hover .service-icon{
+    background-color: #5C0601;
+}
+
+.services-item:hover h3 {
+    text-transform: uppercase;
+}
+
+.services-item:hover p {
+    color: #5C0601;
+}
+
+.futer {
+    position: sticky !important;
+}
+
+/*---RESPONSIVE STYLES---*/
+
+@media screen and (max-width: 1280px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container h2 {
+        font-size: 28px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .container p {
+        font-size: 16px;
+        margin-bottom: 18px;
+    }
+
+    .services-block {
+        grid-template-columns: auto auto;
+        grid-gap: 12px;
+    }
+
+    .services-item {
+        padding: 12px;
+    }
+
+    .service-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .services-item h3 {
+        margin-top: 12px;
+    }
+
+    .services-item p {
+        margin-bottom: 12px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 70%;
+    }
+
+    .container h2 {
+        font-size: 22px;
+        margin-top: 16px;
+    }
+
+    .container p {
+        font-size: 15px;
+    }
+
+    .services-block {
+        grid-template-columns: auto;
+        justify-items: normal;
+    }
+
+    .services-item {
+        padding: 8px;
+    }
+
+    .service-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .services-item h3 {
+        margin-top: 8px;
+        font-size: 15px;
+    }
+
+    .services-item p {
+        font-size: 14px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 80%;
+    }
+
+    .container h2 {
+        font-size: 20px;
+        margin-top: 12px;
+        margin-bottom: 8px;
+    }
+
+    .container p {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .services-block {
+        grid-gap: 10px;
+    }
+
+    .service-icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .services-item h3 {
+        font-size: 14px;
+    }
+
+    .services-item p {
+        margin-bottom: 8px;
+    }
+}
