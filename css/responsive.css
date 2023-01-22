@@ -89,18 +89,16 @@
 
 
 /*футер-----*/
-.futer {
+/*.futer {
 	top: calc(100% - 90px);
-}
+}*/
 .follow {
-	padding-top: 0;
-	margin-top: 10px;
+	padding-top: 5px;
+	
 }
 
 .follow ul {
 	margin: 5px;
-    padding: 0;
-    text-align: center;
 }
 
 .follow ul li img {	
@@ -119,9 +117,40 @@
 
 @media screen and (max-width: 768px) {
 
+.menu {
+	display: none;
+}
 
+.burger {
+	display: block;
+	float: right;
+	cursor: pointer;
+}
 
+.conteiner .burger {
+	margin: 20px;
+}
 
+.hello h3 {
+    width: 80%;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.hello h2 {
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.hello h1 {
+	font-size: 30px;
+    line-height: 50px;
+}
+
+.hello a {
+	font-size: 20px;
+    line-height: 40px;
+}
 
 
 	

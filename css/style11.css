@@ -40,10 +40,6 @@
 	height: 100%;
 }
 
-.logo-link:hover img {
-  transform: scale(1.2);
-}
-
 #for-main img {
 	filter: invert(100%);
 }
@@ -76,122 +72,16 @@
   text-decoration: underline;
 }
 
-.burger {
-	display: none;
-
-}
-
-/* скрываем чекбокс --------------------------------------------------------------------------------*/
-#menu__toggle {
-  opacity: 0;
-}
-/* стилизуем кнопку */
-.menu__btn {
-  display: flex; /* используем flex для центрирования содержимого */
-  align-items: center;  /* центрируем содержимое кнопки */
-/*  position: fixed;
-  top: 20px;
-  left: 20px;*/
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  z-index: 1;
-}
-/* добавляем "гамбургер" */
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
-  display: block;
-  position: absolute;
-  width: 30px;
-  height: 2px;
-  background-color: #616161;
-}
-.menu__btn > span::before {
-  content: '';
-  top: -8px;
-}
-.menu__btn > span::after {
-  content: '';
-  top: 8px;
-}
-
-.menu__box {
-  display: block;
-  position: absolute;
-  visibility: hidden;
-/*  top: 0;
-  left: -100%;*/
-  width: 270px;
- 	right: 0;
-  margin: 0;
-  padding: 30px 0;
-  list-style: none;
-  text-align: center;
-  background-color: #e9e9e9;
-  box-shadow: -5px 5px 6px rgba(0, 0, 0, .3);
-}
-
-#for-main .menu__box {
-	box-shadow: -5px 5px 5px #fff;
-}
-/* элементы меню */
-.menu__item {
-    display: block;
-    padding: 10px 40px;
-    color: #000;
-    font-weight: 500;
-    font-size: 17px;
-    text-decoration: none;
-}
-
-.menu__item:hover {
-  color: #838383;
-  font-weight: 700;
-  text-decoration: underline;
-}
-
-.menu__box a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-#for-all .menu__box a {
-	color: #000000;
-}
-
-#for-main .menu__box a {
-	color: #000000;	
-}
-
-
-#menu__toggle:checked ~ .menu__btn > span {
-  transform: rotate(45deg);
-}
-#menu__toggle:checked ~ .menu__btn > span::before {
-  top: 0;
-  transform: rotate(0);
-}
-#menu__toggle:checked ~ .menu__btn > span::after {
-  top: 0;
-  transform: rotate(90deg);
-}
-#menu__toggle:checked ~ .menu__box {
-  visibility: visible;
-      right: 0;
-}
-
 
 
 /*БЛОК futer -- общий -------------------------------------*/
 
 .futer {
-	background: #000000;
+	background: #000;
 	width: 100%;
 	margin-top: 20px;
-/*	position: sticky;
 	position: fixed;
-	top: calc(100% - 125px);*/	
+	top: calc(100% - 125px);
 }
 
 .follow {
@@ -200,11 +90,6 @@
 	padding-left: 0;
 	padding-top: 10px;
 }
-
-.follow ul {
-	text-align: center;
-}
-
 .follow ul li {
 	display: inline-block;
 }
@@ -233,7 +118,6 @@
 
 body {
 	margin: 0;
-	background: #F5F8FD;
 /*	position: absolute;*/
 }
 
@@ -245,10 +129,6 @@ body {
 
 .main {
 	margin-top: 10%;
-}
-
-ul {
-    padding: 0;
 }
 .hello {
 	height: 70%;
@@ -310,15 +190,32 @@ ul {
 	margin-left: 50px;
 }
 
+/*.follow h3 {
+	float: left;
+	font-weight: 400;
+	font-size: 18px;
+	font-style: normal;
+	line-height: 24px;
+	color: #838383;
+	    margin: auto;
+}
 
+.follow a {
+	vertical-align: middle;
+	margin: 5px;
+}
+*/
 /*БЛОК about -------------------------------------------------*/
 
 .about-mi {
-	width: 90%;
+/*	width: 90%;*/
 	margin-right: auto;
 	margin-left: auto;
 	margin-bottom: 30px;
 	margin-top: 50px;
+	width: 40%;
+	height: 80%;
+	float: left;
 }
 .competens {
 	width: 90%;
@@ -326,7 +223,7 @@ ul {
 	margin-left: auto;
 	margin-bottom: 30px;
 }
-/*.about-mi h2 {
+.about-mi h2 {
 	font-style: normal;
 	font-weight: 600;
 	font-size: 30px;
@@ -334,19 +231,7 @@ ul {
 	text-align: center;
 	color: #000;
 	margin: 0;
-	
-}*/
 
-.about-mi h2 {
-    margin: 0;
-    margin-top: 30px;
-    margin-bottom: 14px;
-    border-bottom: solid 2px #FEBD01;
-    font-weight: 700;
-    font-size: 35px;
-    text-transform: uppercase;
-    color: #000;
-    text-align: center;
 }
 
 .about-mi h3 {
@@ -361,7 +246,7 @@ ul {
 	margin-bottom: 30px;
 }
 
-/*.competens h2 {
+.competens h2 {
 	font-style: normal;
 	font-weight: 600;
 	font-size: 30px;
@@ -370,18 +255,6 @@ ul {
 	color: #000;
 	margin: 0;
 	
-}*/
-
-.competens h2 {
-    margin: 0;
-    margin-top: 30px;
-    margin-bottom: 14px;
-    border-bottom: solid 2px #FEBD01;
-    font-weight: 700;
-    font-size: 35px;
-    text-transform: uppercase;
-    color: #000;
-    text-align: center;
 }
 
 .competens h3 {
@@ -396,37 +269,4 @@ ul {
 	margin-bottom: 30px;
 }
 
-.skill_box {
-    margin-bottom: 25px;
-    max-width: 100%;
-}
 
-.skill_box h6 {
-    margin: 0;
-    font-weight: 500;
-    font-size: 16px;
-    color: #000;
-}
-
-.skill_bar {
-    position: relative;
-    height: 8px;
-    background-color: #eee;
-}
-
-.skill_bar_in {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 8px;
-    background-color: #febd01;
-}
-
-.skill_bar_in span {
-    position: absolute;
-    right: 0;
-    top: -22px;
-    font-weight: 400;
-    font-size: 16px;
-    color: #838383;
-}
