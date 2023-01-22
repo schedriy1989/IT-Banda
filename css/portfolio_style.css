@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    background: #F5F8FD;
+}
+
+.portfolio {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.container h2 {
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 14px;
+    border-bottom: solid 2px #FEBD01;
+    font-weight: 700;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+}
+
+.container p {
+    margin: 0;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+}
+
+.portfolio-block {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    grid-gap: 16px;
+    margin-bottom: 30px;
+}
+
+.portfolio-item {
+    position: relative;
+    filter: drop-shadow(2px 4px 6px #838383);
+}
+
+.portfolio-item img {
+    
+}
+
+.portfolio-item .gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+    display: none;
+}
+
+.portfolio-item .gradient a {
+    text-decoration: none;
+    text-transform: capitalize;
+    display: inline-block;
+    border-radius: 8px;
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 36px;
+    text-align: center;
+    color: #fff;
+    background-color: #febd01;
+    cursor: pointer;
+}
+
+.portfolio-item:hover .gradient {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---RESPONSIVE STYLES---*/
+
+@media screen and (max-width: 1280px) {
+    .container {
+        width: 90%;
+    }
+
+    .portfolio-block {
+        grid-gap: 12px;
+    }
+
+    .portfolio-item img {
+        width: 302px;
+        height: 306px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container h2 {
+        font-size: 28px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .container p {
+        font-size: 16px;
+        margin-bottom: 18px;
+    }
+
+    .portfolio-block {
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+
+    .portfolio-item img {
+        width: 340px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        
+    }
+
+    .container h2 {
+        font-size: 22px;
+        margin-top: 16px;
+    }
+
+    .container p {
+        font-size: 15px;
+    }
+
+    .portfolio-block {
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        
+    }
+
+    .container h2 {
+        font-size: 20px;
+        margin-top: 12px;
+        margin-bottom: 8px;
+    }
+
+    .container p {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .portfolio-item img {
+        width: 288px;
+    }
+}
