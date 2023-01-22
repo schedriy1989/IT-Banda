@@ -8,6 +8,14 @@ body {
     height: 100%;
 }
 
+.menu {
+    margin: 5px;
+}
+
+ul {
+    padding: 0;
+}
+
 .container {
     width: 1170px;
     height: 100%;
@@ -98,6 +106,10 @@ body {
 
 .services-item:hover p {
     color: #5C0601;
+}
+
+.futer {
+    position: sticky !important;
 }
 
 /*---RESPONSIVE STYLES---*/

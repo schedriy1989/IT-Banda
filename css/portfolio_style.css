@@ -8,6 +8,10 @@ body {
     height: 100%;
 }
 
+ul {
+    padding: 0;
+}
+
 .container {
     width: 1170px;
     height: 100%;
@@ -81,6 +85,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.futer {
+    position: sticky !important;
 }
 
 /*---RESPONSIVE STYLES---*/
