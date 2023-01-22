@@ -3,13 +3,41 @@ body {
     background: #F5F8FD;
 }
 
-.portfolio {
-    width: 100%;
-    height: 100%;
+header .conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .conteiner .logo-link,
+header .conteiner .menu {
+    float: none;
+}
+
+header .conteiner .menu {
+    width: 50%;
+}
+
+.menu {
+    margin: 5px;
 }
 
 ul {
     padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu li {
+    margin: 0;
+    font-weight: 700;
+}
+
+.portfolio {
+    width: 100%;
+    height: 100%;
 }
 
 .container {
@@ -52,10 +80,6 @@ ul {
     filter: drop-shadow(2px 4px 6px #838383);
 }
 
-.portfolio-item img {
-    
-}
-
 .portfolio-item .gradient {
     position: absolute;
     top: 0;
@@ -89,6 +113,15 @@ ul {
 
 .futer {
     position: sticky !important;
+}
+
+.futer .follow {
+    margin: 0 auto;
+}
+
+.futer .follow ul {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 /*---RESPONSIVE STYLES---*/
@@ -130,9 +163,19 @@ ul {
     }
 }
 
+@media screen and (max-width: 950px) {
+    header .conteiner .menu {
+        width: 60%;
+    }
+
+    .futer .follow {
+        padding-top: 10px;
+    }
+}
+
 @media screen and (max-width: 768px) {
-    .container {
-        
+    header .conteiner .menu {
+        width: 70%;
     }
 
     .container h2 {
@@ -150,10 +193,6 @@ ul {
 }
 
 @media screen and (max-width: 480px) {
-    .container {
-        
-    }
-
     .container h2 {
         font-size: 20px;
         margin-top: 12px;

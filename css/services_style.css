@@ -3,6 +3,21 @@ body {
     background: #F5F8FD;
 }
 
+header .conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .conteiner .logo-link,
+header .conteiner .menu {
+    float: none;
+}
+
+header .conteiner .menu {
+    width: 50%;
+}
+
 .services {
     width: 100%;
     height: 100%;
@@ -14,6 +29,15 @@ body {
 
 ul {
     padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu li {
+    margin: 0;
+    font-weight: 700;
 }
 
 .container {
@@ -112,10 +136,19 @@ ul {
     position: sticky !important;
 }
 
+.futer .follow {
+    margin: 0 auto;
+}
+
+.futer .follow ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 /*---RESPONSIVE STYLES---*/
 
 @media screen and (max-width: 1280px) {
-    .container {
+    .container, .conteiner {
         width: 90%;
     }
 }
@@ -156,8 +189,22 @@ ul {
     }
 }
 
+@media screen and (max-width: 950px) {
+    header .conteiner .menu {
+        width: 60%;
+    }
+
+    .futer .follow {
+        padding-top: 10px;
+    }
+}
+
 @media screen and (max-width: 768px) {
-    .container {
+    /*.container {
+        width: 70%;
+    }*/
+
+    header .conteiner .menu {
         width: 70%;
     }
 
@@ -197,9 +244,9 @@ ul {
 }
 
 @media screen and (max-width: 480px) {
-    .container {
+    /*.container {
         width: 80%;
-    }
+    }*/
 
     .container h2 {
         font-size: 20px;
