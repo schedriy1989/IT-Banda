@@ -1,38 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=selection, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/style_contact.css">
+        <link rel="stylesheet" type="text/css" href="css/responsive copy.css">
+    
+        <title>contacts</title>
 <body>
-    <selection id="contacts" class="block contact_fon">
-        <div class="container">
-            <div class="our_service_title">
-                <h2>Контакты</h2>
-                <ul class="contact_info">
-                    <li>
-                        <span>E-mail: </span>
-                        <a href="mailto:schedriy1989@gmail.com">schedriy1989@gmail.com</a>
-                    </li>
-                    <li>
-                        <span>Telegram: </span>
-                        <a href="https://t.me/Nikkind">@Nikkind</a>
-                    </li>
-                    <li>
-                        <span>Facebook: </span>
-                        <a href="https://www.facebook.com/profile.php?id=100075766701093">Руслан Щедрий</a>
-                    </li>
-                    <li>
-                        <span>Instagram: </span>
-                        <a href="https://www.instagram.com/schedriy1989/">Руслан Щедрий</a>
-                    </li>
-                </ul>
-                <p>
-                    Напишіть нам на телеграм-канал, вкажіть телефон
-                    і ми зателефонуємо протягом 10 хвилин
-                </p>
+   <header id="for-all" class="header">
+		<div class="conteiner">
+			<div class="logo-link">
+				<a class="main-link" href="main.html">
+					<img src="img/logo.png"></a>		
+			</div>
+			<div class="menu">				
+					<div class="nav-block">
+						<ul>
+              <li><a href="main.html">Головна</a></li>
+              <li><a href="about.html">Про мене</a></li>
+              <li><a href="services.html">Послуги</a></li>
+              <li><a href="portfolio.html">Портфоліо</a></li>
+              <li><a href="blog.html">Блог</a></li>
+              <li><a href="contacts.html">Контакти</a></li>				      
+						</ul>					
+					</div>
+			</div>
+
+		</div>	
+	</header>
+
+    <div class="container_contacts">
+
+          <!-- content содержит содержимое формы -->
+          <div class="content">
+
+            <!-- Левая колонка: адрес, телефоны, email. -->
+            <div class="left-side">
+              <div class="address details">
+    
+                <!-- Вместо классов: название шрифтовых иконок (fontawesome.com) -->
+                <i class="fas fa-map-marker-alt"></i>
+    
+                <!-- topic - заголовок, text-one, text-two - текст -->
+                <div class="topic">Адреса</div>
+                <div class="text-one">м. Київ</div>
+                <div class="text-two">01008, м. Київ, вул. М. Грушевського, 5</div>
+                <div id="googleMap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.6651541548204!2d30.5346883158836!3d50.44733739547012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfad233ecb25%3A0x86b1c9363cb57bb4!2z0YPQuy4g0JzQuNGF0LDQuNC70LAg0JPRgNGD0YjQtdCy0YHQutC-0LPQviwgNSwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2sus!4v1674395262413!5m2!1sru!2sus" width="100%" height="200px" style="border:0;" allowfullscreen="" loading="eager" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>               
+              </div>
+              <div class="phone details">
+                <i class="fas fa-phone-alt"></i>
+                <div class="topic">Телефон</div>
+                <div class="text-one">+380 44 255 4246</div>
+              </div>
+              <div class="email details">
+                <i class="fas fa-envelope"></i>
+                <div class="topic">Email</div>
+                <div class="text-one">babak-s@rada.gov.ua</div>
+              </div>
             </div>
     
             <!-- Правая колонка: сама форма -->
@@ -71,7 +98,17 @@
                 </div>
               </form>
             </div>
+          </div>
         </div>
-    </selection>
+    
+        <!-- Подключение шрифтовых иконок, можно получить на fontawesome.com -->
+        <script
+          src="https://kit.fontawesome.com/fce9a50d02.js"
+          crossorigin="anonymous"
+        ></script>
+
+    <futer>
+		
+	</futer>
 </body>
 </html>
