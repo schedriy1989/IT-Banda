@@ -1,5 +1,5 @@
 /*БЛОК style_blog -------------------------------------------------*/
-body {
+/*body {
 	margin: 0;
 	background: #F5F8FD;
 }
@@ -35,7 +35,7 @@ ul {
 	margin: 0;
 	font-weight: 700;
 }
-
+*/
 .container {
 	width: 1170px;
 	height: 100%;
@@ -44,6 +44,7 @@ ul {
 
 .head_blog {
   text-align: center;
+	width: 100%;
 }
 
 .blog_content {
@@ -116,80 +117,55 @@ ul {
 			width: 90%;
 	}
 
-	.portfolio-block {
+	.row {
 			grid-gap: 12px;
 	}
 
-	.portfolio-item img {
-			width: 302px;
-			height: 306px;
+	.blok_post .picture img {
+			width: 150px;
+			height: 150px;
 	}
 }
 
 @media screen and (max-width: 1024px) {
-	.container h2 {
+	.head_blog h2 {
 			font-size: 28px;
 			margin-top: 20px;
 			margin-bottom: 10px;
 	}
 
-	.container p {
-			font-size: 16px;
-			margin-bottom: 18px;
-	}
 
-	.portfolio-block {
+	.row {
 			grid-template-columns: auto auto;
 			justify-content: center;
 	}
 
-	.portfolio-item img {
+	.blok_post .picture img {
 			width: 340px;
 	}
 }
 
-@media screen and (max-width: 950px) {
-	header .conteiner .menu {
-			width: 60%;
-	}
-
-	.futer .follow {
-			padding-top: 10px;
-	}
-}
-
 @media screen and (max-width: 768px) {
-	header .conteiner .menu {
-			width: 70%;
-	}
 
-	.container h2 {
+	.head_blog h2 {
 			font-size: 22px;
 			margin-top: 16px;
 	}
 
-	.container p {
-			font-size: 15px;
-	}
 
-	.portfolio-block {
+	.row {
 			grid-template-columns: auto;
 	}
 }
 
 @media screen and (max-width: 480px) {
-	.container h2 {
+	.head_blog h2 {
 			font-size: 20px;
 			margin-top: 12px;
 			margin-bottom: 8px;
 	}
 
-	.container p {
-			font-size: 14px;
-			margin-bottom: 12px;
-	}
-
-	.portfolio-item img {
+	.blok_post .picture img  {
 			width: 288px;
 	}
 }
