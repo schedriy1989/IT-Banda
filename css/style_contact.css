@@ -2,13 +2,25 @@
 /*БЛОК contacts -------------------------------------------------*/
 
 
-
+.head_cont h2 {
+	    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 14px;
+    border-bottom: solid 2px #FEBD01;
+    font-weight: 700;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+}
 /* Ограничиваем контейнер по ширине 1000px */
 .container_contacts {
-  width: 100%;
+  width: 90%;
   max-width: 1000px;
   padding: 0 20px;
 	display: flex;
+		margin-right: auto;
+	margin-left: auto;
 }
 
 /* Стили самой формы */
@@ -31,7 +43,7 @@
 
 /* Стили левой колонки */
 .left-side {
-  width: 25%; /* занимает 25% общей ширины */
+  width: 35%; /* занимает 25% общей ширины */
   height: 100%; /* растягиваем на всю высоту */
   position: relative; /* позиционирование относительное (для ::before) */
   display: flex;
@@ -52,8 +64,9 @@
 
 /* Стили правой колонки */
 .right-side {
-  width: 75%; /* занимает 75% общей ширины */
-  margin-left: 75px;
+    width: 65%;
+    margin-left: 75px;
+    margin-right: 10px;
 }
 
 /* Элементы левой колонки: адрес, телефон, email */
@@ -153,7 +166,7 @@
 
 /*.futer {
     position: sticky !important;
-}*/
+}
 
 .futer .follow {
 	margin: 0 auto;
@@ -162,7 +175,7 @@
 .futer .follow ul {
 	display: flex;
 	justify-content: space-evenly;
-}
+}*/
 
 /*---RESPONSIVE STYLES---*/
 
@@ -171,14 +184,14 @@
 			width: 90%;
 	}
 
-	.portfolio-block {
+/*	.portfolio-block {
 			grid-gap: 12px;
 	}
 
 	.portfolio-item img {
 			width: 302px;
 			height: 306px;
-	}
+	}*/
 }
 
 @media screen and (max-width: 1024px) {
@@ -193,30 +206,25 @@
 			margin-bottom: 18px;
 	}
 
-	.portfolio-block {
+/*	.portfolio-block {
 			grid-template-columns: auto auto;
 			justify-content: center;
 	}
 
 	.portfolio-item img {
 			width: 340px;
-	}
+	}*/
 }
 
 @media screen and (max-width: 950px) {
-	header .conteiner .menu {
+/*	header .conteiner .menu {
 			width: 60%;
-	}
+	}*/
 
-	.futer .follow {
-			padding-top: 10px;
-	}
+
 }
 
 @media screen and (max-width: 768px) {
-	header .conteiner .menu {
-			width: 70%;
-	}
 
 	.container h2 {
 			font-size: 22px;
@@ -226,10 +234,37 @@
 	.container p {
 			font-size: 15px;
 	}
+.content {
+	    flex-direction: column;
+}
 
-	.portfolio-block {
-			grid-template-columns: auto;
-	}
+.left-side {
+    width: 90%;
+    height: 50%;
+}
+
+.right-side {
+	margin-top: 20px;
+    width: 90%;
+    height: 50%;
+}
+.left-side::before {
+	display: none;
+}
+
+.input-box input, .input-box textarea {    
+    width: 90%;
+}
+
+.input-box input, .input-box textarea {
+    height: 90%;
+ }
+.button {
+	padding: 20px;
+}
+
+
+
 }
 
 @media screen and (max-width: 480px) {
@@ -244,7 +279,5 @@
 			margin-bottom: 12px;
 	}
 
-	.portfolio-item img {
-			width: 288px;
-	}
+
 }

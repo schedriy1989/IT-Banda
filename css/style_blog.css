@@ -114,6 +114,17 @@ ul {
   transform: scale(1.1);
 }
 
+.blok_post a {
+		text-decoration: none;
+  	color: #838383;
+	margin: 0;
+}
+
+.blok_post a:hover, a :focus {
+  font-weight: 700;
+  text-decoration: underline;
+  color: #000;
+}
 /*.futer {
     position: sticky !important;
 }
