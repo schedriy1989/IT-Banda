@@ -29,6 +29,9 @@
 /*ширина окна от 950 до 1024-----------------------------------------*/
 
 @media screen and (max-width: 1024px) {
+.hello {
+	margin-top: 286px;
+}
 
 .about-mi h3 {
 	font-size: 16px;	
