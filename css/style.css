@@ -177,8 +177,9 @@
   transform: rotate(90deg);
 }
 #menu__toggle:checked ~ .menu__box {
-  visibility: visible;
-      right: 0;
+	box-shadow: none;
+  	visibility: visible;
+	right: 0;
 }
 
 
@@ -238,9 +239,12 @@ body {
 }
 
 #main-body {
-	background-image: url(../img/mein-bg.jpg);
+	/*background-image: url(../img/mein-bg.jpg);
 	background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
+
+	/*---фоновая картинка на всю ширину экрана + по центру---*/
+	background: url(../img/mein-bg.jpg) center center/cover no-repeat fixed #000;
 }
 
 .main {
@@ -291,11 +295,18 @@ ul {
 	text-decoration: none;
   	color: #ffffff;
 	margin: 0;
-	padding-left: 50px;
+	/*padding-left: 50px;*/
 	font-weight: 500;
 	font-size: 30px;
 	line-height: 50px;
 	text-align: justify;
+	/*---немного стилизировала кнопку---*/
+	background-color: #5C0601;
+    padding: 0;
+    margin-left: 50px;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px 0px rgb(255 255 255);
 }
 
 .hello a:hover, a :focus {
