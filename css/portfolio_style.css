@@ -3,7 +3,7 @@ body {
     background: #F5F8FD;
 }
 
-header .conteiner {
+/*header .conteiner {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -22,8 +22,7 @@ header .conteiner .menu {
     margin: 5px;
 }
 
-ul {
-    padding: 0;
+
     margin: 0;
     display: flex;
     flex-wrap: wrap;
@@ -33,6 +32,10 @@ ul {
 .menu li {
     margin: 0;
     font-weight: 700;
+}*/
+
+ul {
+    padding: 0;
 }
 
 .portfolio {
@@ -113,7 +116,7 @@ ul {
 
 /*.futer {
     position: sticky !important;
-}*/
+}
 
 .futer .follow {
     margin: 0 auto;
@@ -122,7 +125,7 @@ ul {
 .futer .follow ul {
     display: flex;
     justify-content: space-evenly;
-}
+}*/
 
 /*---RESPONSIVE STYLES---*/
 
@@ -164,9 +167,9 @@ ul {
 }
 
 @media screen and (max-width: 950px) {
-    header .conteiner .menu {
+/*    header .conteiner .menu {
         width: 60%;
-    }
+    }*/
 
     .futer .follow {
         padding-top: 10px;
@@ -174,9 +177,9 @@ ul {
 }
 
 @media screen and (max-width: 768px) {
-    header .conteiner .menu {
+/*    header .conteiner .menu {
         width: 70%;
-    }
+    }*/
 
     .container h2 {
         font-size: 22px;

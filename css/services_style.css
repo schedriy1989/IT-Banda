@@ -3,7 +3,7 @@ body {
     background: #F5F8FD;
 }
 
-header .conteiner {
+/*header .conteiner {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,20 +25,20 @@ header .conteiner .menu {
 
 .menu {
     margin: 5px;
-}
+}*/
 
 ul {
     padding: 0;
-    margin: 0;
+/*    margin: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between;*/
 }
 
-.menu li {
+/*.menu li {
     margin: 0;
     font-weight: 700;
-}
+}*/
 
 .container {
     width: 1170px;
@@ -190,23 +190,23 @@ ul {
 }
 
 @media screen and (max-width: 950px) {
-    header .conteiner .menu {
+/*    header .conteiner .menu {
         width: 60%;
-    }
+    }*/
 
-    .futer .follow {
+/*    .futer .follow {
         padding-top: 10px;
     }
-}
+}*/
 
 @media screen and (max-width: 768px) {
     /*.container {
         width: 70%;
-    }*/
+    }
 
     header .conteiner .menu {
         width: 70%;
-    }
+    }*/
 
     .container h2 {
         font-size: 22px;
